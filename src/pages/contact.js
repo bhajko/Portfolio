@@ -7,8 +7,10 @@ const ContactPage = () => {
     return (
         <Layout>
             <SEO title="Contact me" />
-            <h1>Contact</h1>
-            <p>The best way to reach me is via email.</p>
+            <div className="container">
+                <h1>Contact</h1>
+                <p>The best way to reach me is via email.</p>
+            </div>
         </Layout>
     )
 }

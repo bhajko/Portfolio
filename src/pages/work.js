@@ -7,8 +7,10 @@ const WorkPage = () => {
     return (
         <Layout>
             <SEO title="My work" />
-            <h1>My work</h1>
-            <p>Projects will show up here later on.</p>
+            <div className="container">
+                <h1>My work</h1>
+                <p>Projects will show up here later on.</p>
+            </div>
         </Layout>
     )
 }
