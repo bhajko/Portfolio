@@ -6,11 +6,9 @@ import '../styles/index.scss'
 
 const Layout = (props) => {
     return (
-        <div>
-            <div>
-                <Header />
-                <main>{props.children}</main>
-            </div>
+        <div className="site">
+            <Header />
+            <main className="site-content">{props.children}</main>
             <Footer />
         </div>
     )

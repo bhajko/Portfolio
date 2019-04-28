@@ -12,8 +12,10 @@ const Footer = () => {
         }
     `)
     return (
-        <footer>
-            <p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p>
+        <footer className="footer">
+            <div className="content has-text-centered">
+                <p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p>
+            </div>
         </footer>
     )
 }
