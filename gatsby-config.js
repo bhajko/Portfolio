@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Portfolio',
+        title: 'Balázs Hajkó',
         author: 'Balázs Hajkó',
         email: 'bhajko@gmail.com'
     },
@@ -9,12 +9,12 @@ module.exports = {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         'gatsby-plugin-react-helmet',
-        // {
-        //     resolve: 'gatsby-source-filesystem',
-        //     options: {
-        //         name: 'images',
-        //         path: path.join(__dirname, 'src', 'images')
-        //     }
-        // }
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'images',
+                path: `${__dirname}/src/images/`
+            }
+        }
     ]
 }
