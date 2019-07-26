@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { IconContext } from "react-icons"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -21,9 +23,12 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Contact me" />
-      <section className="section is-medium">
+      <section className="section">
         <div className="container">
           <div className="columns">
+            {/* <div className="column">
+              <h1 className="has-text-weight-bold">Or contact me via...</h1>
+            </div> */}
             <div className="column">
               <Img fluid={data.file.childImageSharp.fluid} />
             </div>
@@ -46,6 +51,31 @@ const ContactPage = () => {
                 </div>
               </div>
               <button className="button is-dark is-rounded">Send</button>
+              <br />
+              <a href="https://github.com/bhajko" target="_blank">
+                <IconContext.Provider
+                  value={{
+                    color: "#FFDD57",
+                    size: "2em",
+                    style: "margin-right: 1em",
+                  }}
+                >
+                  <FaGithub />
+                </IconContext.Provider>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/balazs-hajko/"
+                target="_blank"
+              >
+                <IconContext.Provider
+                  value={{
+                    color: "#FFDD57",
+                    size: "2em",
+                  }}
+                >
+                  <FaLinkedinIn />
+                </IconContext.Provider>
+              </a>
             </div>
           </div>
         </div>

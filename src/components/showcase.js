@@ -23,7 +23,7 @@ const ShowCase = ({ title, description }) => {
       <div className="showcase-details">
         <article className="message">
           <div className="message-body">
-            <p className="title">{title}</p>
+            <h1 className="title">{title}</h1>
             <p>{description}</p>
             <br />
             <button className="button is-dark is-rounded">Read more</button>

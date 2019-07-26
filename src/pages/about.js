@@ -21,14 +21,16 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About me" />
-      <div className="container">
-        <Img fixed={data.file.childImageSharp.fixed} />
-        <h1>About Me</h1>
-        <p>I currently work as a Front-end developer.</p>
-        <p>
-          <Link to="/contact">Want to work with me? Reach out.</Link>
-        </p>
-      </div>
+      <section className="section">
+        <div className="container">
+          {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
+          <h1>About Me</h1>
+          <p>I currently work as a Front-end developer.</p>
+          <p>
+            <Link to="/contact">Want to work with me? Reach out.</Link>
+          </p>
+        </div>
+      </section>
     </Layout>
   )
 }

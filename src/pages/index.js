@@ -23,11 +23,14 @@ const IndexPage = () => {
                 a Front-end developer living in Budapest.
               </span>
             </h2>
-            <Link className="button is-dark is-rounded" to="/work">
+            <Link className="button button--hero is-dark is-rounded" to="/work">
               Portfolio
             </Link>
             <br />
-            <Link className="button is-dark is-rounded" to="/about">
+            <Link
+              className="button button--hero is-dark is-rounded"
+              to="/about"
+            >
               Skills
             </Link>
           </div>
