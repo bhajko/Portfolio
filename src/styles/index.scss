@@ -2,6 +2,7 @@ $footer-background-color: #f5f5f5;
 $footer-padding: 1rem;
 $family-primary: "Muli";
 $family-secondary: "Montserrat";
+$card-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 8px 8px 0px 0px rgba(0, 0, 0, 0.3);
 
 @import "../../node_modules/bulma/bulma.sass";
 
@@ -58,8 +59,54 @@ h2 {
   border-radius: 5px;
 }
 
+.showcase-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .showcase-img {
+    width: 200vw;
+  }
+
+  .showcase-details {
+    padding: 0 50px;
+  }
+}
+
+.showcase-card:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   html {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .showcase-card {
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    &:nth-of-type(even) {
+      flex-direction: column;
+    }
+
+    .showcase-img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .showcase-details {
+      padding: 0;
+    }
+  }
+
+  .showcase-card:last-child {
+    margin-bottom: 0;
   }
 }
