@@ -51,8 +51,8 @@ const WorkPage = () => {
             <div className="column">
               <WorkItem
                 image={"https://bulma.io/images/placeholders/1280x960.png"}
-                title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                title="Portfolio site"
+                tech="#React #Gatsby #GraphQL #Sass"
               />
             </div>
           </div>

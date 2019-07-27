@@ -13,10 +13,10 @@ const WorkItem = ({ image, title, tech, link }) => {
           <div className="media-content">
             <p className="title is-4">{title}</p>
             <p>{tech}</p>
+            <a href={link} target="blank">
+              Check it out
+            </a>
           </div>
-          <a href={link} target="blank">
-            Check it out
-          </a>
         </div>
       </div>
     </div>

@@ -26,9 +26,6 @@ const ContactPage = () => {
       <section className="section">
         <div className="container">
           <div className="columns">
-            {/* <div className="column">
-              <h1 className="has-text-weight-bold">Or contact me via...</h1>
-            </div> */}
             <div className="column">
               <Img fluid={data.file.childImageSharp.fluid} />
             </div>
@@ -52,63 +49,60 @@ const ContactPage = () => {
               </div>
               <button className="button is-dark is-rounded">Send</button>
               <div className="is-divider" data-content="OR" />
-              {/* <h1 className="has-text-weight-bold">Or contact me via...</h1> */}
-              <a
-                href="https://www.facebook.com/balazs.hajko"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconContext.Provider
-                  value={{
-                    color: "#444",
-                    size: "2em",
-                    className: "icons-contact",
-                  }}
+              <div className="icons-contact">
+                <a
+                  href="https://www.facebook.com/balazs.hajko"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaFacebookF />
-                </IconContext.Provider>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/balazs-hajko/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconContext.Provider
-                  value={{
-                    color: "#444",
-                    size: "2em",
-                    className: "icons-contact",
-                  }}
+                  <IconContext.Provider
+                    value={{
+                      color: "#444",
+                      size: "2em",
+                    }}
+                  >
+                    <FaFacebookF />
+                  </IconContext.Provider>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/balazs-hajko/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaLinkedinIn />
-                </IconContext.Provider>
-              </a>
-              <a
-                href="https://github.com/bhajko"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconContext.Provider
-                  value={{
-                    color: "#444",
-                    size: "2em",
-                    className: "icons-contact",
-                  }}
+                  <IconContext.Provider
+                    value={{
+                      color: "#444",
+                      size: "2em",
+                    }}
+                  >
+                    <FaLinkedinIn />
+                  </IconContext.Provider>
+                </a>
+                <a
+                  href="https://github.com/bhajko"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaGithub />
-                </IconContext.Provider>
-              </a>
-              <a href="mailto:bhajko@gmail.com" rel="noopener noreferrer">
-                <IconContext.Provider
-                  value={{
-                    color: "#444",
-                    size: "2em",
-                    className: "icons-footer",
-                  }}
-                >
-                  <FaEnvelope />
-                </IconContext.Provider>
-              </a>
+                  <IconContext.Provider
+                    value={{
+                      color: "#444",
+                      size: "2em",
+                    }}
+                  >
+                    <FaGithub />
+                  </IconContext.Provider>
+                </a>
+                <a href="mailto:bhajko@gmail.com" rel="noopener noreferrer">
+                  <IconContext.Provider
+                    value={{
+                      color: "#444",
+                      size: "2em",
+                    }}
+                  >
+                    <FaEnvelope />
+                  </IconContext.Provider>
+                </a>
+              </div>
             </div>
           </div>
         </div>
