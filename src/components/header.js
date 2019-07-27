@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   const active = {
-    boxShadow: "inset 0 3px 0 #FFDD57",
+    boxShadow: "inset 0 -3px 0 #FFDD57",
   }
 
   return (

@@ -23,7 +23,7 @@ const AboutPage = () => {
       <SEO title="About me" />
       <section className="section">
         <div className="container">
-          {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
+          <Img fixed={data.file.childImageSharp.fixed} />
           <h1>About Me</h1>
           <p>I currently work as a Front-end developer.</p>
           <p>

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { IconContext } from "react-icons"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaEnvelope } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -51,29 +51,62 @@ const ContactPage = () => {
                 </div>
               </div>
               <button className="button is-dark is-rounded">Send</button>
-              <br />
-              <a href="https://github.com/bhajko" target="_blank">
+              <hr />
+              <h1 className="has-text-weight-bold">Or contact me via...</h1>
+              <a
+                href="https://www.facebook.com/balazs.hajko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <IconContext.Provider
                   value={{
-                    color: "#FFDD57",
+                    color: "#444",
                     size: "2em",
-                    style: "margin-right: 1em",
+                    className: "icons-contact",
                   }}
                 >
-                  <FaGithub />
+                  <FaFacebookF />
                 </IconContext.Provider>
               </a>
               <a
                 href="https://www.linkedin.com/in/balazs-hajko/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <IconContext.Provider
                   value={{
-                    color: "#FFDD57",
+                    color: "#444",
                     size: "2em",
+                    className: "icons-contact",
                   }}
                 >
                   <FaLinkedinIn />
+                </IconContext.Provider>
+              </a>
+              <a
+                href="https://github.com/bhajko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconContext.Provider
+                  value={{
+                    color: "#444",
+                    size: "2em",
+                    className: "icons-contact",
+                  }}
+                >
+                  <FaGithub />
+                </IconContext.Provider>
+              </a>
+              <a href="mailto:bhajko@gmail.com" rel="noopener noreferrer">
+                <IconContext.Provider
+                  value={{
+                    color: "#444",
+                    size: "2em",
+                    className: "icons-footer",
+                  }}
+                >
+                  <FaEnvelope />
                 </IconContext.Provider>
               </a>
             </div>
