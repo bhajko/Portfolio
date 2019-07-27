@@ -5,6 +5,7 @@ $family-secondary: "Montserrat";
 $card-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 5px 5px 0px 0px rgba(0, 0, 0, 0.3);
 
 @import "../../node_modules/bulma/bulma.sass";
+@import "~bulma-divider";
 
 body,
 html {
@@ -85,11 +86,11 @@ h2 {
 }
 
 .icons-contact {
-  margin: 50px 50px 0 0;
+  margin-right: 50px;
 }
 
-.icons-footer {
-  margin-right: 10px;
+.is-divider {
+  margin: 50px 0;
 }
 
 @media only screen and (min-width: 768px) {

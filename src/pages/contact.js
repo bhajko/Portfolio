@@ -51,8 +51,8 @@ const ContactPage = () => {
                 </div>
               </div>
               <button className="button is-dark is-rounded">Send</button>
-              <hr />
-              <h1 className="has-text-weight-bold">Or contact me via...</h1>
+              <div className="is-divider" data-content="OR" />
+              {/* <h1 className="has-text-weight-bold">Or contact me via...</h1> */}
               <a
                 href="https://www.facebook.com/balazs.hajko"
                 target="_blank"
