@@ -26,8 +26,11 @@ const ContactPage = () => {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column">
-              <Img fluid={data.file.childImageSharp.fluid} />
+            <div className="column contactImg-wrapper">
+              <Img
+                fluid={data.file.childImageSharp.fluid}
+                className="contactImg"
+              />
             </div>
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>

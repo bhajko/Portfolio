@@ -95,6 +95,15 @@ h2 {
   margin: 50px 0;
 }
 
+.contactImg-wrapper {
+  display: flex;
+  align-items: center;
+
+  .contactImg {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   html {
     font-size: 18px;
