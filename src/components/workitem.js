@@ -1,11 +1,12 @@
 import React from "react"
+import Img from "gatsby-image"
 
 const WorkItem = ({ image, title, tech, link }) => {
   return (
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
-          <img src={image} alt={title} />
+        <figure className="image">
+          <Img fluid={image.childImageSharp.fluid} alt={title} />
         </figure>
       </div>
       <div className="card-content">

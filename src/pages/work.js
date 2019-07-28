@@ -1,10 +1,23 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import WorkItem from "../components/workitem"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const WorkPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      portfolio: file(relativePath: { eq: "portfolio.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <SEO title="My work" />
@@ -13,21 +26,21 @@ const WorkPage = () => {
           <div className="columns">
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Project 1"
                 tech="HTML CSS JAVASCRIPT"
               />
             </div>
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Project 1"
                 tech="HTML CSS JAVASCRIPT"
               />
             </div>
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Project 1"
                 tech="HTML CSS JAVASCRIPT"
               />
@@ -36,23 +49,23 @@ const WorkPage = () => {
           <div className="columns">
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Project 1"
                 tech="HTML CSS JAVASCRIPT"
               />
             </div>
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Project 1"
                 tech="HTML CSS JAVASCRIPT"
               />
             </div>
             <div className="column">
               <WorkItem
-                image={"https://bulma.io/images/placeholders/1280x960.png"}
+                image={data.portfolio}
                 title="Portfolio site"
-                tech="#React #Gatsby #GraphQL #Sass"
+                tech="#React #Gatsby #GraphQL #Bulma #Sass"
               />
             </div>
           </div>

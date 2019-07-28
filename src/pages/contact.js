@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "contact3.png" }) {
+      file(relativePath: { eq: "contact.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid
@@ -25,12 +25,9 @@ const ContactPage = () => {
       <SEO title="Contact me" />
       <section className="section">
         <div className="container">
-          <div className="columns">
-            <div className="column contactImg-wrapper">
-              <Img
-                fluid={data.file.childImageSharp.fluid}
-                className="contactImg"
-              />
+          <div className="columns is-vcentered">
+            <div className="column">
+              <Img fluid={data.file.childImageSharp.fluid} />
             </div>
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>

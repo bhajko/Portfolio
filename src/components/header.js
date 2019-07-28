@@ -31,7 +31,9 @@ const Header = () => {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item logo" to="/">
-              {data.site.siteMetadata.author}
+              <span className="highlight-logo">
+                {data.site.siteMetadata.author}
+              </span>
             </Link>
 
             <div
