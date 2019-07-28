@@ -49,7 +49,7 @@ const ContactPage = () => {
               </div>
               <button className="button is-dark is-rounded">Send</button>
               <div className="is-divider" data-content="OR" />
-              <div className="icons-contact">
+              <div className="icons-wrapper">
                 <a
                   href="https://www.facebook.com/balazs.hajko"
                   target="_blank"
