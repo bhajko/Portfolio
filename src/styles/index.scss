@@ -98,12 +98,18 @@ h2 {
 
 .link {
   color: #4a4a4a;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     box-shadow: inset 0 -10px 0 $warning;
   }
 }
-
+.fbIcon,
+.liIcon,
+.ghIcon,
+.gmIcon {
+  transition: all 0.2s ease-in-out;
+}
 .fbIcon:hover {
   color: #3b5998 !important;
 }

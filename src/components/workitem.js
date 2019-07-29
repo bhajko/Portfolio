@@ -15,7 +15,7 @@ const WorkItem = ({ image, title, tech, link }) => {
             <p className="title is-4">{title}</p>
             <div className="tags">
               {tech.map(tag => (
-                <span className="tag is-dark is-rounded">{tag}</span>
+                <span className="tag is-warning is-rounded">{tag}</span>
               ))}
             </div>
             <a href={link} target="blank">
