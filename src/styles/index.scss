@@ -96,7 +96,7 @@ h2 {
   border-radius: 80%;
 }
 
-.about-link {
+.link {
   color: #4a4a4a;
 
   &:hover {
@@ -111,6 +111,18 @@ h2 {
 
 .is-divider {
   margin: 50px 0;
+}
+
+.footerLink-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+
+  .footerLink {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 768px) {

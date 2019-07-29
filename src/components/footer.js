@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 // import { IconContext } from "react-icons"
 // import { FaGithub, FaLinkedinIn, FaFacebookF, FaEnvelope } from "react-icons/fa"
 
@@ -72,6 +72,22 @@ const Footer = () => {
             <FaEnvelope />
           </IconContext.Provider>
         </a> */}
+        <div className="footerLink-wrapper">
+          <div className="footerLink">
+            <Link className="link" to="/">
+              Home
+            </Link>
+            <Link className="link" to="/work">
+              Work
+            </Link>
+            <Link className="link" to="/about">
+              About
+            </Link>
+            <Link className="link" to="/contact">
+              Contact
+            </Link>
+          </div>
+        </div>
         <p>
           © {data.site.siteMetadata.author} {new Date().getFullYear()}
         </p>

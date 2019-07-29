@@ -64,10 +64,10 @@ const AboutPage = () => {
                 I specialise in front-end development and design systems. I've
                 built applications and PWAs with <strong>Angular</strong> and{" "}
                 <strong>TypeScript</strong> but recently I'm focusing on the
-                React ecosystem. I build websites and applications with{" "}
-                <strong>React</strong>, <strong>Gatsby</strong>,{" "}
-                <strong>Next</strong>, <strong>Redux</strong>,{" "}
-                <strong>GraphQL</strong>.
+                React ecosystem and the JAMstack. I build websites and
+                applications with <strong>React</strong>,{" "}
+                <strong>Gatsby</strong>, <strong>Next</strong>,{" "}
+                <strong>Redux</strong> and <strong>GraphQL</strong>.
               </p>
               <br />
               <p>
@@ -78,16 +78,14 @@ const AboutPage = () => {
               <p>
                 If you wish to work with me,{" "}
                 <Link to="/contact">
-                  <span className="has-text-weight-bold about-link">
-                    contact me.
-                  </span>
+                  <span className="has-text-weight-bold link">contact me.</span>
                 </Link>
               </p>
               <br />
               <p>
                 You can download my CV{" "}
                 <a href="balazs_hajko_cv.pdf" target="_blank">
-                  <span className="has-text-weight-bold about-link">here.</span>
+                  <span className="has-text-weight-bold link">here.</span>
                 </a>
               </p>
             </div>
@@ -175,7 +173,7 @@ const AboutPage = () => {
                 </IconContext.Provider>
               </div>
             </div>
-            <div class="is-divider-vertical is-hidden-touch" />
+            <div className="is-divider-vertical is-hidden-touch" />
             <div className="column">
               <h1 className="has-text-weight-bold has-text-centered">
                 Tools I use
@@ -254,7 +252,7 @@ const AboutPage = () => {
                 </IconContext.Provider>
               </div>
             </div>
-            <div class="is-divider-vertical is-hidden-touch" />
+            <div className="is-divider-vertical is-hidden-touch" />
             <div className="column">
               <h1 className="has-text-weight-bold has-text-centered">
                 On the radar
