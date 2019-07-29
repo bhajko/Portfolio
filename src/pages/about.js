@@ -55,21 +55,24 @@ const AboutPage = () => {
               <p>
                 I'm Balázs, a front-end developer based in Budapest, Hungary. I
                 focus on creating digital products with great user experience.
-                These days I work at a hungarian IT company where my role
+                Currently I work at a hungarian IT company where my role
                 comprises of building new features and improving the overall
                 experience of two R&D projects.
               </p>
               <br />
               <p>
-                I specialise in front-end development and design systems. I'm
-                passionate about the web, design and everything at its
-                intersection. I deeply care about inclusion and empathy.
+                I specialise in front-end development and design systems. I've
+                built applications and PWAs with <strong>Angular</strong> and{" "}
+                <strong>TypeScript</strong> but recently I'm focusing on the
+                React ecosystem. I build websites and applications with{" "}
+                <strong>React</strong>, <strong>Gatsby</strong>,{" "}
+                <strong>Next</strong>, <strong>Redux</strong>,{" "}
+                <strong>GraphQL</strong>.
               </p>
               <br />
               <p>
                 I look forward for opportunities as a developer to create
-                meaningful products. I'm also interested in product and
-                design-oriented roles.
+                meaningful products.
               </p>
               <br />
               <p>
@@ -83,9 +86,9 @@ const AboutPage = () => {
               <br />
               <p>
                 You can download my CV{" "}
-                <Link to="/contact">
+                <a href="balazs_hajko_cv.pdf" target="_blank">
                   <span className="has-text-weight-bold about-link">here.</span>
-                </Link>
+                </a>
               </p>
             </div>
 
