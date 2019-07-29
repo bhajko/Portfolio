@@ -18,6 +18,9 @@ const WorkPage = () => {
     }
   `)
 
+  const portfolioTech = ["React", "Gatsby", "GraphQL", "Bulma", "Sass"]
+  const projectTech = ["HTML", "CSS", "JavaScript"]
+
   return (
     <Layout>
       <SEO title="My work" />
@@ -28,21 +31,21 @@ const WorkPage = () => {
               <WorkItem
                 image={data.portfolio}
                 title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                tech={projectTech}
               />
             </div>
             <div className="column">
               <WorkItem
                 image={data.portfolio}
                 title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                tech={projectTech}
               />
             </div>
             <div className="column">
               <WorkItem
                 image={data.portfolio}
                 title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                tech={projectTech}
               />
             </div>
           </div>
@@ -51,21 +54,21 @@ const WorkPage = () => {
               <WorkItem
                 image={data.portfolio}
                 title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                tech={projectTech}
               />
             </div>
             <div className="column">
               <WorkItem
                 image={data.portfolio}
                 title="Project 1"
-                tech="HTML CSS JAVASCRIPT"
+                tech={projectTech}
               />
             </div>
             <div className="column">
               <WorkItem
                 image={data.portfolio}
                 title="Portfolio site"
-                tech="#React #Gatsby #GraphQL #Bulma #Sass"
+                tech={portfolioTech}
               />
             </div>
           </div>

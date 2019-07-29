@@ -13,7 +13,11 @@ const WorkItem = ({ image, title, tech, link }) => {
         <div className="media">
           <div className="media-content">
             <p className="title is-4">{title}</p>
-            <p>{tech}</p>
+            <div className="tags">
+              {tech.map(tag => (
+                <span className="tag is-dark is-rounded">{tag}</span>
+              ))}
+            </div>
             <a href={link} target="blank">
               Check it out
             </a>
