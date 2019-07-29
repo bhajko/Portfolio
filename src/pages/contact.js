@@ -59,6 +59,7 @@ const ContactPage = () => {
                     value={{
                       color: "#444",
                       size: "2em",
+                      className: "fbIcon",
                     }}
                   >
                     <FaFacebookF />
@@ -73,6 +74,7 @@ const ContactPage = () => {
                     value={{
                       color: "#444",
                       size: "2em",
+                      className: "liIcon",
                     }}
                   >
                     <FaLinkedinIn />
@@ -87,6 +89,7 @@ const ContactPage = () => {
                     value={{
                       color: "#444",
                       size: "2em",
+                      className: "ghIcon",
                     }}
                   >
                     <FaGithub />
@@ -97,6 +100,7 @@ const ContactPage = () => {
                     value={{
                       color: "#444",
                       size: "2em",
+                      className: "gmIcon",
                     }}
                   >
                     <FaEnvelope />
