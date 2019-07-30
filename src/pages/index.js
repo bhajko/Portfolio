@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import HeroBg from "../components/herobg"
 import ShowCase from "../components/showcase"
