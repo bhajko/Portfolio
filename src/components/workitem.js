@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const WorkItem = ({ image, title, tech, link }) => {
+const WorkItem = ({ image, title, tech, icon, link }) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -18,6 +18,7 @@ const WorkItem = ({ image, title, tech, link }) => {
                 <span className="tag is-warning is-rounded">{tag}</span>
               ))}
             </div>
+            <div>{icon}</div>
             <a href={link} target="blank">
               Check it out
             </a>

@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import GatsbyIcon from "../assets/gatsby.svg"
 
 import WorkItem from "../components/workitem"
 import Layout from "../components/layout"
@@ -69,6 +70,7 @@ const WorkPage = () => {
                 image={data.portfolio}
                 title="Portfolio site"
                 tech={portfolioTech}
+                icon={<GatsbyIcon className="workIcons" />}
               />
             </div>
           </div>

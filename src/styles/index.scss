@@ -92,6 +92,11 @@ h2 {
   margin-bottom: 0;
 }
 
+.workIcons {
+  height: 2.5em;
+  fill: #663399;
+}
+
 .aboutImg {
   border-radius: 80%;
 }
@@ -104,12 +109,14 @@ h2 {
     box-shadow: inset 0 -10px 0 $warning;
   }
 }
+
 .fbIcon,
 .liIcon,
 .ghIcon,
 .gmIcon {
   transition: all 0.2s ease-in-out;
 }
+
 .fbIcon:hover {
   color: #3b5998 !important;
 }
