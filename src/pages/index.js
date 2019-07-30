@@ -9,9 +9,22 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-
       <HeroBg />
-
+      <section className="section">
+        <div className="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <article class="message">
+                <div class="message-body subtitle">
+                  “The technology you use impresses no one. The experience you
+                  create with it is everything.”
+                  <p className="subtitle is-6">Sean Gerety</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="section">
         <div className="container">
           <ShowCase
