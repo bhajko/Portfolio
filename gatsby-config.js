@@ -18,12 +18,25 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     google: {
+    //       families: ["Muli", "Montserrat"],
+    //     },
+    //   },
+    // },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ["Muli", "Montserrat"],
-        },
+        fonts: [
+          {
+            family: `Muli`,
+          },
+          {
+            family: `Montserrat`,
+          },
+        ],
       },
     },
     {
