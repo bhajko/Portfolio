@@ -26,19 +26,19 @@ module.exports = {
     //     },
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Muli`,
-          },
-          {
-            family: `Montserrat`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Muli`,
+    //       },
+    //       {
+    //         family: `Montserrat`,
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
