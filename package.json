@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio-site",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A personal website to showcase my projects",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -31,6 +31,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.7.0",
+    "readme-md-generator": "^0.6.1",
     "typeface-montserrat": "0.0.75",
     "typeface-muli": "0.0.71"
   },
@@ -40,8 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/bhajko/Portfolio"
   },
+  "author": "Balázs Hajkó",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
