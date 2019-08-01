@@ -5,6 +5,9 @@ module.exports = {
     title: "Balázs Hajkó",
     author: "Balázs Hajkó",
     email: "bhajko@gmail.com",
+    description: "Balázs Hajkó's personal Portfolio site",
+    url: "https://www.bhajko.dev",
+    lang: "en",
   },
   plugins: [
     "gatsby-plugin-sass",
