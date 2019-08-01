@@ -23,8 +23,8 @@ const SEO = ({ title }) => {
         name="description"
         content={`${data.site.siteMetadata.description}`}
       />
-      <link rel="canonical" href="https://bhajko.dev/" />
-      <html lang="en" />
+      <link rel="canonical" href={`${data.site.siteMetadata.url}`} />
+      <html lang={`${data.site.siteMetadata.lang}`} />
     </Helmet>
   )
 }
