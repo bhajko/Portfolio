@@ -10,17 +10,22 @@ const SEO = ({ title }) => {
           title
           description
           lang
+          author
         }
       }
     }
   `)
 
   return (
-    <Helmet
-      title={`${title} | ${data.site.siteMetadata.title}`}
-      description={`${data.site.siteMetadata.description}`}
-      lang={`${data.site.siteMetadata.lang}`}
-    />
+    <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
+      <meta charSet="utf-8" />
+      <meta
+        name="description"
+        content={`${data.site.siteMetadata.description}`}
+      />
+      <link rel="canonical" href="https://bhajko.dev/" />
+      <html lang="en" />
+    </Helmet>
   )
 }
 
