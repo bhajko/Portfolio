@@ -18,8 +18,8 @@ const SEO = ({ title }) => {
   return (
     <Helmet
       title={`${title} | ${data.site.siteMetadata.title}`}
-      description={data.site.siteMetadata.description}
-      lang={data.site.siteMetadata.lang}
+      description={`${data.site.siteMetadata.description}`}
+      lang={`${data.site.siteMetadata.lang}`}
     />
   )
 }
