@@ -42,11 +42,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Balázs Hajkó Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#ffdd57`,
+        theme_color: `#ffdd57`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
       },
