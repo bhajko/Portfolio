@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const WorkItem = ({ image, title, tech, icon, link }) => {
+const WorkItem = ({ image, title, tech, code, demo }) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -11,17 +11,29 @@ const WorkItem = ({ image, title, tech, icon, link }) => {
       </div>
       <div className="card-content">
         <div className="media">
-          <div className="media-content">
+          <div className="media-content has-text-centered">
             <p className="title is-4">{title}</p>
-            <div className="tags">
+            <div className="tags is-centered">
               {tech.map(tag => (
                 <span className="tag is-warning is-rounded">{tag}</span>
               ))}
             </div>
-            <div>{icon}</div>
-            <a href={link} target="blank">
-              Check it out
-            </a>
+            <div className="space-around">
+              <a
+                href={code}
+                className="link has-text-weight-bold"
+                target="blank"
+              >
+                Code
+              </a>
+              <a
+                href={demo}
+                className="link has-text-weight-bold"
+                target="blank"
+              >
+                Demo
+              </a>
+            </div>
           </div>
         </div>
       </div>

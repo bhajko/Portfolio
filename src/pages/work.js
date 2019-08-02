@@ -19,6 +19,7 @@ const WorkPage = () => {
   `)
 
   const portfolioTech = ["React", "Gatsby", "GraphQL", "Bulma", "Sass"]
+  const auroraTech = ["HTML", "CSS", "Materialize", "PHP"]
   const projectTech = ["HTML", "CSS", "JavaScript"]
 
   return (
@@ -60,15 +61,19 @@ const WorkPage = () => {
             <div className="column">
               <WorkItem
                 image={data.portfolio}
-                title="Project 1"
-                tech={projectTech}
+                title="Portfolio"
+                tech={portfolioTech}
+                code="https://github.com/bhajko/Portfolio"
+                demo="https://bhajkoportfolio.netlify.com/"
               />
             </div>
             <div className="column">
               <WorkItem
                 image={data.portfolio}
-                title="Portfolio site"
-                tech={portfolioTech}
+                title="Aurora Hungary"
+                tech={auroraTech}
+                code="https://github.com/bhajko/Aurora-Hungary"
+                demo="https://aurorahungary.hu/"
               />
             </div>
           </div>

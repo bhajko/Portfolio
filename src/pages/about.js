@@ -96,7 +96,7 @@ const AboutPage = () => {
                 My skill set
               </h1>
               <br />
-              <div className="icons-wrapper">
+              <div className="space-around">
                 <IconContext.Provider
                   value={{
                     color: "#E34F26",
@@ -168,7 +168,7 @@ const AboutPage = () => {
                 Tools I use
               </h1>
               <br />
-              <div className="icons-wrapper">
+              <div className="space-around">
                 <IconContext.Provider
                   value={{
                     color: "#007ACD",
@@ -247,7 +247,7 @@ const AboutPage = () => {
                 On the radar
               </h1>
               <br />
-              <div className="icons-wrapper">
+              <div className="space-around">
                 <IconContext.Provider
                   value={{
                     color: "#76B858",
