@@ -16,16 +16,12 @@ import {
   DiTrello,
   DiVisualstudio,
   DiNpm,
-  DiBootstrap,
 } from "react-icons/di"
-import {
-  FaDocker,
-  FaYarn,
-  FaSlack,
-  FaVuejs,
-  FaSketch,
-  FaFigma,
-} from "react-icons/fa"
+import { FaDocker, FaYarn, FaSlack, FaVuejs } from "react-icons/fa"
+import TsIcon from "../assets/typescript.svg"
+import WpIcon from "../assets/webpack.svg"
+import XdIcon from "../assets/adobexd.svg"
+import GulpIcon from "../assets/gulp.svg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -133,16 +129,6 @@ const AboutPage = () => {
                 </IconContext.Provider>
                 <IconContext.Provider
                   value={{
-                    color: "#61408F",
-                    size: "2.5em",
-                  }}
-                >
-                  <span className="tooltip" data-tooltip="Bootstrap">
-                    <DiBootstrap />
-                  </span>
-                </IconContext.Provider>
-                <IconContext.Provider
-                  value={{
                     color: "#F7DF1E",
                     size: "2.5em",
                   }}
@@ -151,6 +137,9 @@ const AboutPage = () => {
                     <DiJsBadge />
                   </span>
                 </IconContext.Provider>
+                <span className="tooltip" data-tooltip="TypeScript">
+                  <TsIcon className="aboutIcons aboutIcons--ts" />
+                </span>
                 <IconContext.Provider
                   value={{
                     color: "#DD0330",
@@ -289,6 +278,12 @@ const AboutPage = () => {
                     <FaDocker />
                   </span>
                 </IconContext.Provider>
+                <span className="tooltip" data-tooltip="Gulp">
+                  <GulpIcon className="aboutIcons aboutIcons--gu" />
+                </span>
+                <span className="tooltip" data-tooltip="Webpack">
+                  <WpIcon className="aboutIcons aboutIcons--wp" />
+                </span>
                 <IconContext.Provider
                   value={{
                     color: "#41B883",
@@ -299,26 +294,9 @@ const AboutPage = () => {
                     <FaVuejs />
                   </span>
                 </IconContext.Provider>
-                <IconContext.Provider
-                  value={{
-                    color: "#FDAD00",
-                    size: "2.5em",
-                  }}
-                >
-                  <span className="tooltip" data-tooltip="Sketch">
-                    <FaSketch />
-                  </span>
-                </IconContext.Provider>
-                <IconContext.Provider
-                  value={{
-                    color: "#F24E1E",
-                    size: "2.5em",
-                  }}
-                >
-                  <span className="tooltip" data-tooltip="Figma">
-                    <FaFigma />
-                  </span>
-                </IconContext.Provider>
+                <span className="tooltip" data-tooltip="Adobe XD">
+                  <XdIcon className="aboutIcons aboutIcons--xd" />
+                </span>
               </div>
             </div>
           </div>

@@ -94,9 +94,24 @@ h2 {
   margin-bottom: 0;
 }
 
-.workIcons {
+.aboutIcons {
   height: 2.5em;
-  fill: #663399;
+
+  &--ts {
+    fill: #007acc;
+  }
+
+  &--gu {
+    fill: #da4648;
+  }
+
+  &--wp {
+    fill: #8dd6f9;
+  }
+
+  &--xd {
+    fill: #ff2bc2;
+  }
 }
 
 .aboutImg {
