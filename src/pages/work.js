@@ -24,7 +24,7 @@ const WorkPage = () => {
 
   return (
     <Layout>
-      <SEO title="My work" />
+      <SEO title="Work" />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -64,7 +64,7 @@ const WorkPage = () => {
                 title="Portfolio"
                 tech={portfolioTech}
                 code="https://github.com/bhajko/Portfolio"
-                demo="https://bhajkoportfolio.netlify.com/"
+                demo="https://bhajko.dev/"
               />
             </div>
             <div className="column">

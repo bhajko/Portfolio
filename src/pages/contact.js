@@ -22,7 +22,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <SEO title="Contact me" />
+      <SEO title="Contact" />
       <section className="section">
         <div className="container">
           <div className="columns is-vcentered">

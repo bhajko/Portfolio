@@ -26,16 +26,18 @@ const WorkItem = ({ image, title, tech, code, demo }) => {
               <a
                 href={code}
                 className="link has-text-weight-bold"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Code
               </a>
               <a
                 href={demo}
                 className="link has-text-weight-bold"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Demo
+                Site
               </a>
             </div>
           </div>

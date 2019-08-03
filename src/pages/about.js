@@ -41,7 +41,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEO title="About me" />
+      <SEO title="About" />
       <section className="section">
         <div className="container">
           <div className="columns is-vcentered">
@@ -80,7 +80,11 @@ const AboutPage = () => {
               <br />
               <p>
                 You can download my CV{" "}
-                <a href="balazs_hajko_cv.pdf" target="_blank">
+                <a
+                  href="balazs_hajko_cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="has-text-weight-bold link">here.</span>
                 </a>
               </p>
