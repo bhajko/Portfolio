@@ -1,7 +1,7 @@
 import React from "react"
 
 import HeroBg from "../components/herobg"
-import ShowCase from "../components/showcase"
+// import ShowCase from "../components/showcase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <HeroBg />
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div class="columns is-centered">
             <div class="column is-half">
@@ -46,7 +46,7 @@ const IndexPage = () => {
             harum? Veritatis."
           />
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

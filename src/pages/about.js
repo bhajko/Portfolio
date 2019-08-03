@@ -14,11 +14,11 @@ import {
   DiGithubBadge,
   DiStackoverflow,
   DiTrello,
-  DiVisualstudio,
   DiNpm,
 } from "react-icons/di"
 import { FaDocker, FaYarn, FaSlack, FaVuejs } from "react-icons/fa"
 import TsIcon from "../assets/typescript.svg"
+import VsIcon from "../assets/visualstudiocode.svg"
 import WpIcon from "../assets/webpack.svg"
 import XdIcon from "../assets/adobexd.svg"
 import GulpIcon from "../assets/gulp.svg"
@@ -169,16 +169,9 @@ const AboutPage = () => {
               </h1>
               <br />
               <div className="space-around">
-                <IconContext.Provider
-                  value={{
-                    color: "#007ACD",
-                    size: "2.5em",
-                  }}
-                >
-                  <span className="tooltip" data-tooltip="VS Code">
-                    <DiVisualstudio />
-                  </span>
-                </IconContext.Provider>
+                <span className="tooltip" data-tooltip="VS Code">
+                  <VsIcon className="aboutIcons aboutIcons--vs" />
+                </span>
                 <IconContext.Provider
                   value={{
                     color: "#FB3E44",

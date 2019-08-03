@@ -108,8 +108,13 @@ h2 {
 
 .aboutIcons {
   height: 2.5em;
+  pointer-events: none;
 
   &--ts {
+    fill: #007acc;
+  }
+
+  &--vs {
     fill: #007acc;
   }
 
