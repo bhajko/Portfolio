@@ -5,10 +5,10 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NotFound = () => {
+const Success = () => {
   const data = useStaticQuery(graphql`
     query {
-      robot: file(relativePath: { eq: "robot.png" }) {
+      email: file(relativePath: { eq: "mail.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid
@@ -20,14 +20,17 @@ const NotFound = () => {
 
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <SEO title="Email sent" />
       <section className="section">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-half is-offset-one-quarter has-text-centered">
-              <h1 className="title is-2">Page not found</h1>
-              <h1 className="title is-1">404</h1>
-              <Img fluid={data.robot.childImageSharp.fluid} />
+              <h1 className="title">Thank you for your message!</h1>
+              <br />
+              <h2 className="subtitle">
+                I will get back to you as soon as possible.
+              </h2>
+              <Img fluid={data.email.childImageSharp.fluid} />
               <p>
                 <Link className="has-text-weight-bold link" to="/">
                   Home page
@@ -41,4 +44,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default Success

@@ -32,7 +32,12 @@ const ContactPage = () => {
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
-              <form name="contact" method="POST" data-netlify="true">
+              <form
+                action="/pages/success"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="field">
                   <div className="control">
