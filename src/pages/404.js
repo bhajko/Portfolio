@@ -21,17 +21,22 @@ const NotFound = () => {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <div className="container">
-        <div className="columns">
-          <div className="column is-half is-offset-one-quarter has-text-centered">
-            <h1 className="title is-1">Page not found</h1>
-            <Img fluid={data.robot.childImageSharp.fluid} />
-            <p>
-              <Link to="/">Head home</Link>
-            </p>
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-half is-offset-one-quarter has-text-centered">
+              <h1 className="title is-2">Page not found</h1>
+              <h1 className="title is-1 is-warning">404</h1>
+              <Img fluid={data.robot.childImageSharp.fluid} />
+              <p>
+                <Link className="link" to="/">
+                  Head home
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
