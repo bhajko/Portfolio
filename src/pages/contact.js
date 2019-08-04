@@ -33,8 +33,7 @@ const ContactPage = () => {
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
               <form
-                name="contact"
-                method="POST"
+                action="POST"
                 netlify-honeypot="bot-field"
                 data-netlify="true"
               >
