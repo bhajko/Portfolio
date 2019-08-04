@@ -81,7 +81,7 @@ const AboutPage = () => {
               <p>
                 You can download my CV{" "}
                 <a
-                  href="Balazs_Hajko.pdf"
+                  href="./Balazs_Hajko_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
