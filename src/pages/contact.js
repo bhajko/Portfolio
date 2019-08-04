@@ -32,7 +32,7 @@ const ContactPage = () => {
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
-              <form
+              {/* <form
                 action="POST"
                 netlify-honeypot="bot-field"
                 data-netlify="true"
@@ -79,7 +79,29 @@ const ContactPage = () => {
                 <button type="submit" className="button is-dark is-rounded">
                   Send
                 </button>
+              </form> */}
+
+              <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>
+                    Your Name: <input type="text" name="name" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Your Email: <input type="email" name="email" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Message: <textarea name="message" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
               </form>
+
               <div className="is-divider" data-content="OR" />
               <div className="space-around">
                 <a
