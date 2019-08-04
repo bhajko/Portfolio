@@ -38,34 +38,34 @@ const ContactPage = () => {
                 data-netlify="true"
               >
                 <div className="field is-hidden">
-                  <p className="control">
+                  <div className="control">
                     <input
                       className="input"
                       name="bot-field"
                       type="text"
                       placeholder="Bot field"
                     />
-                  </p>
+                  </div>
                 </div>
                 <div className="field">
-                  <p className="control">
+                  <div className="control">
                     <input
                       className="input"
                       name="name"
                       type="text"
                       placeholder="Name"
                     />
-                  </p>
+                  </div>
                 </div>
                 <div className="field">
-                  <p className="control">
+                  <div className="control">
                     <input
                       className="input"
                       name="email"
                       type="email"
                       placeholder="Email"
                     />
-                  </p>
+                  </div>
                 </div>
                 <div className="field">
                   <div className="control">
