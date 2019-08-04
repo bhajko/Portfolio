@@ -32,22 +32,55 @@ const ContactPage = () => {
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
-              <div className="field">
-                <p className="control">
-                  <input className="input" type="name" placeholder="Name" />
-                </p>
-              </div>
-              <div className="field">
-                <p className="control">
-                  <input className="input" type="email" placeholder="Email" />
-                </p>
-              </div>
-              <div className="field">
-                <div className="control">
-                  <textarea className="textarea" placeholder="Message" />
+              <form
+                name="contact"
+                method="POST"
+                netlify-honeypot="bot-field"
+                data-netlify="true"
+              >
+                <div className="field is-hidden">
+                  <p className="control">
+                    <input
+                      className="input"
+                      name="bot-field"
+                      type="text"
+                      placeholder="Bot field"
+                    />
+                  </p>
                 </div>
-              </div>
-              <button className="button is-dark is-rounded">Send</button>
+                <div className="field">
+                  <p className="control">
+                    <input
+                      className="input"
+                      name="name"
+                      type="text"
+                      placeholder="Name"
+                    />
+                  </p>
+                </div>
+                <div className="field">
+                  <p className="control">
+                    <input
+                      className="input"
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                    />
+                  </p>
+                </div>
+                <div className="field">
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name="message"
+                      placeholder="Message"
+                    />
+                  </div>
+                </div>
+                <button type="submit" className="button is-dark is-rounded">
+                  Send
+                </button>
+              </form>
               <div className="is-divider" data-content="OR" />
               <div className="space-around">
                 <a
