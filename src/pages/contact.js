@@ -32,27 +32,14 @@ const ContactPage = () => {
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
-              {/* <form
-                action="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-              >
-                <div className="field is-hidden">
-                  <div className="control">
-                    <input
-                      className="input"
-                      name="bot-field"
-                      type="text"
-                      placeholder="Bot field"
-                    />
-                  </div>
-                </div>
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="field">
                   <div className="control">
                     <input
                       className="input"
-                      name="name"
                       type="text"
+                      name="name"
                       placeholder="Name"
                     />
                   </div>
@@ -61,8 +48,8 @@ const ContactPage = () => {
                   <div className="control">
                     <input
                       className="input"
-                      name="email"
                       type="email"
+                      name="email"
                       placeholder="Email"
                     />
                   </div>
@@ -79,28 +66,6 @@ const ContactPage = () => {
                 <button type="submit" className="button is-dark is-rounded">
                   Send
                 </button>
-              </form> */}
-
-              <form
-                name="contact"
-                method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <p>
-                  <label>
-                    Email: <input type="text" name="email" />
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    Message: <textarea name="message" />
-                  </label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
               </form>
 
               <div className="is-divider" data-content="OR" />
