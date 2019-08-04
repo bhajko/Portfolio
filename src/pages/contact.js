@@ -87,12 +87,7 @@ const ContactPage = () => {
                 netlify-honeypot="bot-field"
                 data-netlify="true"
               >
-                <p class="hidden">
-                  <label>
-                    Don’t fill this out if you're human:{" "}
-                    <input name="bot-field" />
-                  </label>
-                </p>
+                <input type="hidden" name="form-name" value="contact" />
                 <p>
                   <label>
                     Email: <input type="text" name="email" />
