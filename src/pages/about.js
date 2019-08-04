@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery, withPrefix } from "gatsby"
 import Img from "gatsby-image"
 import { IconContext } from "react-icons"
 import {
@@ -81,7 +81,7 @@ const AboutPage = () => {
               <p>
                 You can download my CV{" "}
                 <a
-                  href="./Balazs_Hajko_CV.pdf"
+                  href={withPrefix("/Balazs_Hajko_CV.pdf")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
