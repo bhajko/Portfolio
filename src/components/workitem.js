@@ -6,11 +6,13 @@ const WorkItem = ({ image, title, tech, code, demo }) => {
     <div className="card">
       <div className="card-image">
         <figure className="image">
-          <Img
-            fluid={image.childImageSharp.fluid}
-            className="workitemImg"
-            alt={title}
-          />
+          <a href={demo} target="_blank" rel="noopener noreferrer">
+            <Img
+              fluid={image.childImageSharp.fluid}
+              className="workitemImg"
+              alt={title}
+            />
+          </a>
         </figure>
       </div>
       <div className="card-content">
