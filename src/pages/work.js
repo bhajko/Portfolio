@@ -15,6 +15,13 @@ const WorkPage = () => {
           }
         }
       }
+      aurora: file(relativePath: { eq: "aurora.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -69,7 +76,7 @@ const WorkPage = () => {
             </div>
             <div className="column">
               <WorkItem
-                image={data.portfolio}
+                image={data.aurora}
                 title="Aurora Hungary"
                 tech={auroraTech}
                 code="https://github.com/bhajko/Aurora-Hungary"
