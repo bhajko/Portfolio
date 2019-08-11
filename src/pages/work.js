@@ -22,9 +22,17 @@ const WorkPage = () => {
           }
         }
       }
+      bpdeluxe: file(relativePath: { eq: "bp-deluxe.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
+  const bpDeluxeTech = ["React", "Styled Components", "Contentful"]
   const portfolioTech = ["React", "Gatsby", "GraphQL", "Bulma", "Sass"]
   const auroraTech = ["HTML", "CSS", "Materialize", "PHP"]
   const projectTech = ["HTML", "CSS", "JavaScript"]
@@ -60,9 +68,11 @@ const WorkPage = () => {
           <div className="columns">
             <div className="column">
               <WorkItem
-                image={data.portfolio}
-                title="Project 1"
-                tech={projectTech}
+                image={data.bpdeluxe}
+                title="BP Deluxe Homes"
+                tech={bpDeluxeTech}
+                code="https://github.com/bhajko/BP-Deluxe-Homes"
+                demo="https://bpdeluxe.netlify.com/"
               />
             </div>
             <div className="column">
