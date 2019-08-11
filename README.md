@@ -31,7 +31,7 @@ npm run start
 ## Tech stack
 
 - [Gatsby](https://gatsbyjs.org/) - blazing fast static site generator based on React
-- [Bulma](https://bulma.io/) - css framework
+- [Bulma](https://bulma.io/) - CSS framework
 - [React Icons](https://react-icons.netlify.com/) - icons
 - [GraphQL](https://graphql.org/) - a query language for APIs
 - [Netlify](https://www.netlify.com/) - static site hosting
