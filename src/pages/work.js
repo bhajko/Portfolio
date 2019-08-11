@@ -72,7 +72,7 @@ const WorkPage = () => {
                 title="BP Deluxe Homes"
                 tech={bpDeluxeTech}
                 code="https://github.com/bhajko/BP-Deluxe-Homes"
-                demo="https://bpdeluxe.netlify.com/"
+                demo="https://bpdeluxe.bhajko.dev/"
               />
             </div>
             <div className="column">
