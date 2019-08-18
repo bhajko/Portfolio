@@ -24,9 +24,9 @@ const HeroBg = () => {
         style={{
           position: "absolute",
           left: 0,
-          top: "32px",
+          top: 0,
           width: "100%",
-          height: "calc(100% - 32px)",
+          height: "100%",
         }}
       />
       <section className="hero is-fullheight-with-navbar">
