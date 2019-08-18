@@ -7,7 +7,7 @@ const HeroBg = () => {
     query {
       hero: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200, quality: 100) {
+          fluid(maxWidth: 4200, quality: 100) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -24,7 +24,7 @@ const HeroBg = () => {
         style={{
           position: "absolute",
           left: 0,
-          top: 0,
+          top: "20px",
           width: "100%",
           height: "100%",
         }}
