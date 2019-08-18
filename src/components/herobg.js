@@ -1,15 +1,14 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 
 const HeroBg = () => {
   const data = useStaticQuery(graphql`
     query {
       hero: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 4160, quality: 100) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 1200, quality: 100) {
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -17,7 +16,19 @@ const HeroBg = () => {
   `)
 
   return (
-    <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
+    <>
+      <Img
+        title="Hero image"
+        alt="Developer"
+        fluid={data.hero.childImageSharp.fluid}
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      />
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
@@ -44,7 +55,7 @@ const HeroBg = () => {
           </div>
         </div>
       </section>
-    </BackgroundImage>
+    </>
   )
 }
 

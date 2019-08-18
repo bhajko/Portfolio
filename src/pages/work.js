@@ -11,21 +11,21 @@ const WorkPage = () => {
       portfolio: file(relativePath: { eq: "portfolio.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
       aurora: file(relativePath: { eq: "aurora.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
       bpdeluxe: file(relativePath: { eq: "bp-deluxe.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

@@ -13,7 +13,7 @@ const ContactPage = () => {
       file(relativePath: { eq: "contact.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -27,13 +27,17 @@ const ContactPage = () => {
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column">
-              <Img fluid={data.file.childImageSharp.fluid} />
+              <Img
+                title="Contact image"
+                alt="Contact"
+                fluid={data.file.childImageSharp.fluid}
+              />
             </div>
             <div className="column">
               <h1 className="has-text-weight-bold">Drop me an email</h1>
               <br />
               <form
-                action="/pages/success"
+                action="/success"
                 name="contact"
                 method="POST"
                 data-netlify="true"

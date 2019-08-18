@@ -11,7 +11,7 @@ const Success = () => {
       email: file(relativePath: { eq: "mail.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -30,7 +30,11 @@ const Success = () => {
               <h2 className="subtitle">
                 I will get back to you as soon as possible.
               </h2>
-              <Img fluid={data.email.childImageSharp.fluid} />
+              <Img
+                title="Success image"
+                alt="Success"
+                fluid={data.email.childImageSharp.fluid}
+              />
               <p>
                 <Link className="has-text-weight-bold link" to="/">
                   Home page

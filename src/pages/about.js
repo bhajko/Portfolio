@@ -32,7 +32,7 @@ const AboutPage = () => {
       about: file(relativePath: { eq: "about.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -91,7 +91,11 @@ const AboutPage = () => {
             </div>
 
             <div className="column">
-              <Img fluid={data.about.childImageSharp.fluid} />
+              <Img
+                title="About image"
+                alt="About"
+                fluid={data.about.childImageSharp.fluid}
+              />
             </div>
           </div>
           <div className="columns is-desktop">

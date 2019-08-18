@@ -11,7 +11,7 @@ const NotFound = () => {
       robot: file(relativePath: { eq: "robot.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -27,7 +27,11 @@ const NotFound = () => {
             <div className="column is-half is-offset-one-quarter has-text-centered">
               <h1 className="title is-2">Page not found</h1>
               <h1 className="title is-1">404</h1>
-              <Img fluid={data.robot.childImageSharp.fluid} />
+              <Img
+                title="404 image"
+                alt="404"
+                fluid={data.robot.childImageSharp.fluid}
+              />
               <p>
                 <Link className="has-text-weight-bold link" to="/">
                   Home page

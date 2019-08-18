@@ -10,6 +10,7 @@ const WorkItem = ({ image, title, tech, code, demo }) => {
             <Img
               fluid={image.childImageSharp.fluid}
               className="workitemImg"
+              title={title}
               alt={title}
             />
           </a>
