@@ -27,6 +27,7 @@ const HeroBg = () => {
           top: 0,
           width: "100%",
           height: "100%",
+          backgroundSize: "cover",
         }}
       />
       <section className="hero is-fullheight-with-navbar">
