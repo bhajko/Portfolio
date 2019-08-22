@@ -2,7 +2,6 @@ $footer-background-color: #f5f5f5;
 $footer-padding: 1rem;
 $family-primary: "Muli";
 $family-secondary: "Montserrat";
-// $card-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 5px 5px 0px 0px rgba(0, 0, 0, 0.3);
 $card-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.12);
 
 @import "../../node_modules/bulma/bulma.sass";
@@ -36,7 +35,10 @@ html {
 
 .button {
   text-transform: uppercase;
-
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #5a5a5a !important;
+  }
   &--hero {
     margin: 0 0 1em 0;
   }
@@ -67,27 +69,27 @@ h2 {
   border-radius: 5px;
 }
 
-.showcase-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
+// .showcase-card {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 100px;
 
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
+//   &:nth-of-type(even) {
+//     flex-direction: row-reverse;
+//   }
 
-  .showcase-img {
-    width: 120vw;
-  }
+//   .showcase-img {
+//     width: 120vw;
+//   }
 
-  .showcase-details {
-    padding: 0 50px;
-  }
-}
+//   .showcase-details {
+//     padding: 0 50px;
+//   }
+// }
 
-.showcase-card:last-child {
-  margin-bottom: 0;
-}
+// .showcase-card:last-child {
+//   margin-bottom: 0;
+// }
 
 .image {
   overflow: hidden;
