@@ -22,7 +22,7 @@ const WorkPage = () => {
           }
         }
       }
-      bpdeluxe: file(relativePath: { eq: "bpdeluxe.png" }) {
+      bpdeluxe: file(relativePath: { eq: "bpdeluxe.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_tracedSVG
