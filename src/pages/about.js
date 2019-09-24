@@ -21,7 +21,7 @@ import TsIcon from "../assets/typescript.svg"
 import VsIcon from "../assets/visualstudiocode.svg"
 import WpIcon from "../assets/webpack.svg"
 import XdIcon from "../assets/adobexd.svg"
-import GulpIcon from "../assets/gulp.svg"
+import JestIcon from "../assets/jest.svg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -279,8 +279,8 @@ const AboutPage = () => {
                     <FaDocker />
                   </span>
                 </IconContext.Provider>
-                <span className="tooltip" data-tooltip="Gulp">
-                  <GulpIcon className="aboutIcons aboutIcons--gu" />
+                <span className="tooltip" data-tooltip="Jest">
+                  <JestIcon className="aboutIcons aboutIcons--je" />
                 </span>
                 <span className="tooltip" data-tooltip="Webpack">
                   <WpIcon className="aboutIcons aboutIcons--wp" />

@@ -33,7 +33,7 @@ const WorkPage = () => {
   `)
 
   const bpDeluxeTech = ["React", "Styled Components", "Contentful"]
-  const portfolioTech = ["React", "Gatsby", "GraphQL", "Bulma", "Sass"]
+  const portfolioTech = ["Gatsby", "GraphQL", "Bulma", "Sass"]
   const auroraTech = ["HTML", "CSS", "Materialize", "PHP"]
   const projectTech = ["HTML", "CSS", "JavaScript"]
 
