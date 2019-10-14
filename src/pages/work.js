@@ -29,10 +29,18 @@ const WorkPage = () => {
           }
         }
       }
+      snkrhdz: file(relativePath: { eq: "snkrhdz.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
     }
   `)
 
-  const bpDeluxeTech = ["React", "Styled Components", "Contentful"]
+  const snkrhdzTech = ["React", "Redux", "Firebase", "Stripe"]
+  const bpDeluxeTech = ["React", "Styled-Components", "Contentful"]
   const portfolioTech = ["Gatsby", "GraphQL", "Bulma", "Sass"]
   const auroraTech = ["HTML", "CSS", "Materialize", "PHP"]
   const projectTech = ["HTML", "CSS", "JavaScript"]
@@ -59,9 +67,11 @@ const WorkPage = () => {
             </div>
             <div className="column">
               <WorkItem
-                image={data.portfolio}
-                title="Project 1"
-                tech={projectTech}
+                image={data.snkrhdz}
+                title="SneakerHeadz webshop"
+                tech={snkrhdzTech}
+                code="https://github.com/bhajko/Snkrhdz-webshop"
+                demo="https://snkrhdz.bhajko.dev/"
               />
             </div>
           </div>
