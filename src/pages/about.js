@@ -67,8 +67,7 @@ const AboutPage = () => {
               </p>
               <br />
               <p>
-                I look forward for opportunities as a developer to create
-                meaningful products.
+                I look forward to creating meaningful products as a developer.
               </p>
               <br />
               <p>
