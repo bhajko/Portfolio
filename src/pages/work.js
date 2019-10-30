@@ -50,22 +50,8 @@ const WorkPage = () => {
       <SEO title="Work" />
       <section className="section">
         <div className="container">
-          <div className="columns">
-            <div className="column">
-              <WorkItem
-                image={data.portfolio}
-                title="Project 1"
-                tech={projectTech}
-              />
-            </div>
-            <div className="column">
-              <WorkItem
-                image={data.portfolio}
-                title="Project 1"
-                tech={projectTech}
-              />
-            </div>
-            <div className="column">
+          <div className="columns is-centered">
+            <div className="column is-5">
               <WorkItem
                 image={data.snkrhdz}
                 title="SneakerHeadz webshop"
@@ -74,9 +60,7 @@ const WorkPage = () => {
                 demo="https://snkrhdz.bhajko.dev/"
               />
             </div>
-          </div>
-          <div className="columns">
-            <div className="column">
+            <div className="column is-5">
               <WorkItem
                 image={data.bpdeluxe}
                 title="BP Deluxe Homes"
@@ -85,7 +69,9 @@ const WorkPage = () => {
                 demo="https://bpdeluxe.bhajko.dev/"
               />
             </div>
-            <div className="column">
+          </div>
+          <div className="columns is-centered">
+            <div className="column is-5">
               <WorkItem
                 image={data.portfolio}
                 title="Portfolio"
@@ -94,7 +80,7 @@ const WorkPage = () => {
                 demo="https://bhajko.dev/"
               />
             </div>
-            <div className="column">
+            <div className="column is-5">
               <WorkItem
                 image={data.aurora}
                 title="Aurora Hungary"
