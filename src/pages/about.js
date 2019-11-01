@@ -52,7 +52,8 @@ const AboutPage = () => {
                 I'm Balázs, a front-end developer based in Budapest, Hungary. I
                 focus on creating digital products with great user experience.
                 Currently I work at a hungarian IT company where I build new
-                features and improve the overall experience of two R&D projects.
+                features and improve the overall user interface of two R&D
+                projects.
               </p>
               <br />
               <p>
