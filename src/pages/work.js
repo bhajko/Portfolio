@@ -8,14 +8,14 @@ import SEO from "../components/seo"
 const WorkPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      portfolio: file(relativePath: { eq: "portfolio.png" }) {
+      portfolio: file(relativePath: { eq: "portfolio.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
-      aurora: file(relativePath: { eq: "aurora.png" }) {
+      aurora: file(relativePath: { eq: "aurora.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -29,7 +29,7 @@ const WorkPage = () => {
           }
         }
       }
-      snkrhdz: file(relativePath: { eq: "snkrhdz.png" }) {
+      snkrhdz: file(relativePath: { eq: "snkrhdz.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -43,7 +43,6 @@ const WorkPage = () => {
   const bpDeluxeTech = ["React", "Styled-Components", "Contentful"]
   const portfolioTech = ["Gatsby", "GraphQL", "Bulma", "Sass"]
   const auroraTech = ["HTML", "CSS", "Materialize", "PHP"]
-  const projectTech = ["HTML", "CSS", "JavaScript"]
 
   return (
     <Layout>
