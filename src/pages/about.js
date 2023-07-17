@@ -6,7 +6,6 @@ import {
   DiHtml5,
   DiCss3,
   DiJsBadge,
-  DiAngularSimple,
   DiReact,
   DiSass,
   DiNodejsSmall,
@@ -49,21 +48,14 @@ const AboutPage = () => {
               <h1 className="has-text-weight-bold">About Me</h1>
               <br />
               <p>
-                I'm Balázs, a front-end developer based in Budapest, Hungary. I
+                I'm Balázs, a frontend developer based in Budapest, Hungary. I
                 focus on creating digital products with great user experience.
-                Currently I work at a hungarian IT company where I build new
-                features and improve the overall user interface of two R&D
-                projects.
               </p>
               <br />
               <p>
-                I specialise in front-end development. I've built applications
-                and PWAs with <strong>Angular</strong> and{" "}
-                <strong>TypeScript</strong> but recently I'm focusing on the
-                React ecosystem and the JAMstack. I build websites and
-                applications with <strong>React</strong>,{" "}
-                <strong>Gatsby</strong>, <strong>Next</strong>,{" "}
-                <strong>Redux</strong> and <strong>GraphQL</strong>.
+                I specialise in frontend development and I build websites and
+                applications with <strong>React</strong>, <strong>Next.js</strong>, <strong>React Native</strong>,
+                <strong>Redux</strong>, <strong>GraphQL</strong>, and <strong>Styled Components</strong>.
               </p>
               <br />
               <p>
@@ -77,16 +69,6 @@ const AboutPage = () => {
                 </Link>
               </p>
               <br />
-              <p>
-                You can download my CV{" "}
-                <a
-                  href={withPrefix("/Balazs_Hajko_CV.pdf")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="has-text-weight-bold link">here.</span>
-                </a>
-              </p>
             </div>
 
             <div className="column">
@@ -147,16 +129,6 @@ const AboutPage = () => {
                 <span className="tooltip" data-tooltip="TypeScript">
                   <TsIcon className="aboutIcons aboutIcons--ts" />
                 </span>
-                <IconContext.Provider
-                  value={{
-                    color: "#DD0330",
-                    size: "2.5em",
-                  }}
-                >
-                  <span className="tooltip" data-tooltip="Angular">
-                    <DiAngularSimple />
-                  </span>
-                </IconContext.Provider>
                 <IconContext.Provider
                   value={{
                     color: "#00D8FF",
